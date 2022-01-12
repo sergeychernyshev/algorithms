@@ -1,5 +1,5 @@
 /**
- * Function returns a Fibonacci number
+ * Functions return a Fibonacci number
  *
  * fib(0) returns 0
  * fib(1) returns 1
@@ -10,7 +10,14 @@
  * @param int input positive integer
  * @returns int
  */
-function fib(input) {
+
+function fibIterative(input) {
+  // implement this using iteration
+
+  return false;
+}
+
+function fibRecursive(input) {
   // implement this using recursion
 
   return false;
