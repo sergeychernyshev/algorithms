@@ -1,0 +1,14 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "factorial": "node factorial.js",
+    "fib": "node fib.js",
+    "list": "node list.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
