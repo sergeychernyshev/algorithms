@@ -13,8 +13,15 @@
 
 function fibIterative(input) {
   // implement this using iteration
-
-  return false;
+  let fibA = 0;
+  let fibB = 1;
+  let fibSum = 0;
+  for (let i = 3; i <= input; i++) {
+    fibSum = fibA + fibB;
+    fibA = fibB;
+    fibB = fibSum;
+  }
+  return fibSum;
 }
 
 function fibRecursive(input) {
@@ -23,4 +30,4 @@ function fibRecursive(input) {
   return false;
 }
 
-console.log(fib(20));
+console.log(fibIterative(6));
