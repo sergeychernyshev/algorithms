@@ -26,8 +26,8 @@ function fibIterative(input) {
 
 function fibRecursive(input) {
   // implement this using recursion
-
-  return false;
+  if (input < 4) return 1;
+  return fibRecursive(input - 1) + fibRecursive(input - 2);
 }
 
-console.log(fibIterative(6));
+console.log(fibRecursive(10));
