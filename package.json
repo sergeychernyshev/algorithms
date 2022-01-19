@@ -6,7 +6,8 @@
   "scripts": {
     "factorial": "node factorial.js",
     "fib": "node fib.js",
-    "list": "node list.js"
+    "list": "node list.js",
+    "sort": "node algorithm_number_reorder_sample.js"
   },
   "keywords": [],
   "author": "",
