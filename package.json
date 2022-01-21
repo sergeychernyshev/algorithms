@@ -6,7 +6,8 @@
   "scripts": {
     "factorial": "node factorial.js",
     "fib": "node fib.js",
-    "list": "node list.js"
+    "list": "node list.js",
+    "palindrome": "node palindrome.js"
   },
   "keywords": [],
   "author": "",
