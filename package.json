@@ -4,13 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "factorial": "node factorial.js",
-    "fib": "node fib.js",
-    "list": "node list.js",
-    "palindrome": "node palindrome.js",
-    "sort": "node algorithm_number_reorder_sample.js",
-    "sortInPlace": "node inplaceSortAlgo.js",
-    "numsToWords": "node numsToWords.js"
+    "start": "node palindrome.js"
   },
   "keywords": [],
   "author": "",
