@@ -8,7 +8,8 @@
     "fib": "node fib.js",
     "list": "node list.js",
     "sort": "node algorithm_number_reorder_sample.js",
-    "sortInPlace": "node inplaceSortAlgo.js"
+    "sortInPlace": "node inplaceSortAlgo.js",
+    "numsToWords": "node numsToWords.js"
   },
   "keywords": [],
   "author": "",
