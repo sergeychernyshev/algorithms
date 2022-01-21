@@ -13,21 +13,30 @@
 
 function fibIterative(input) {
   // implement this using iteration
-  let fibA = 0;
-  let fibB = 1;
-  let fibSum = 0;
-  for (let i = 3; i <= input; i++) {
-    fibSum = fibA + fibB;
-    fibA = fibB;
-    fibB = fibSum;
+
+  if (input < 2) {
+    return input;
   }
-  return fibSum;
+
+  let num1 = 0;
+  let num2 = 1;
+  let sum = 0;
+
+  for (let i = 2; i <= input; i++) {
+    sum = num1 + num2;
+    num1 = num2;
+    num2 = sum;
+  }
+  return sum;
 }
 
 function fibRecursive(input) {
   // implement this using recursion
-  if (input < 4) return 1;
+
+  if (input < 2) return input;
+
   return fibRecursive(input - 1) + fibRecursive(input - 2);
 }
 
+//console.log(fibIteratives(5));
 console.log(fibRecursive(10));

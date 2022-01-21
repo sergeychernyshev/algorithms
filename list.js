@@ -14,11 +14,20 @@ class List {
    * Finds a node with matching data and returns it if found or false if not found
    * Operates Iteratively (e.g. using a loop)
    *
-   * @param {*} data data to find a mathing node
+   * @param {*} data data to find a matching node
    * @returns Node|false
    */
+
   findIterative(data) {
     // implement this method first
+    let node = this.head;
+    do {
+      if (node.data == data) {
+        return node;
+      } else {
+        node = node.next;
+      }
+    } while (node != null);
     return false;
   }
 
@@ -31,7 +40,14 @@ class List {
    */
   findRecursive(data, node = this.head) {
     // implement this method second
-    return false;
+    if (node == null) {
+      return false;
+    }
+    if (node.data == data) {
+      return node;
+    } else {
+      return this.findRecursive(data, node.next);
+    }
   }
 
   add(data) {
@@ -72,7 +88,7 @@ list.add(4);
 list.print();
 
 console.log();
-console.log(7, list.findIterative(7)); // node in the middle
-console.log(1, list.findIterative(1)); // firs node
-console.log(4, list.findIterative(4)); // last node
-console.log(17, list.findIterative(17)); // no matching node
+console.log(7, list.findRecursive(7)); // node in the middle
+//console.log(1, list.findRecursive(1)); // firs node
+//console.log(4, list.findRecursive(4)); // last node
+//console.log(17, list.findRecursive(17)); // no matching node
