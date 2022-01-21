@@ -13,6 +13,7 @@
 
 function fibIterative(input) {
   // implement this using iteration
+
   if (input < 2) {
     return input;
   }
@@ -31,6 +32,7 @@ function fibIterative(input) {
 
 function fibRecursive(input) {
   // implement this using recursion
+
   if (input < 2) return input;
 
   return fibRecursive(input - 1) + fibRecursive(input - 2);
